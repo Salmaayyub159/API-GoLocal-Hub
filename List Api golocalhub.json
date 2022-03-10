@@ -1,0 +1,492 @@
+{
+    "info":{
+        "_postman_id": "",
+		"name": "API for MOBILE",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item":
+    [
+        {
+            "name": " API Login",
+            "item":
+            [
+                {
+                    "name":"Login using email",
+                    "request":
+                    {
+                        "method":"POST",
+                        "header":
+                        [
+                            {
+                                "key":"Connection",
+                                "value":"keep-alive"
+                            }
+
+                        ],
+                        "body":
+                        {
+                            "mode":"formdata",
+                            "formdata":
+                            [
+                                {
+                                    "key":"email",
+                                    "value":""
+                                },
+                                {
+                                    "key":"password",
+                                    "value":""
+                                }
+
+                            ]
+
+                        },
+                        "url":
+                        {
+                            "raw": "https://basedata.go-localhub.com/api/login-customer-email",
+							"protocol": "https",
+							"host": 
+                            [
+								"basedata",
+								"go-localhub",
+								"com"
+								
+							],
+							"path": 
+                            [
+								"api",
+								"login-customer-email"
+							]
+                        }
+                    }
+                },
+                {
+                    "name":"Login using phone",
+                    "request":
+                    {
+                        "method":"POST",
+                        "header":
+                        [
+                            {
+                                "key":"Connection",
+                                "value":"keep-alive"
+                            }
+
+                        ],
+                        "body":
+                        {
+                            "mode":"formdata",
+                            "formdata":
+                            [
+                                {
+                                    "key":"phone",
+                                    "value":""
+                                },
+                                {
+                                    "key":"password",
+                                    "value":""
+                                }
+
+                            ]
+
+                        },
+                        "url":
+                        {
+                            "raw": "https://basedata.go-localhub.com/api/login-customer-phone",
+							"protocol": "https",
+							"host": 
+                            [
+								"basedata",
+								"go-localhub",
+								"com"
+							],
+							"path": 
+                            [
+								"api",
+								"login-customer-phone"
+							]
+                        }
+                    }
+                }
+               
+            ]
+            
+        },
+
+        {
+            "name": " Daftar",
+            "item":
+            [
+                {
+                    "name":"Daftar Konsumen",
+                    "request":
+                    {
+                        "method":"POST",
+                        "header":
+                        [
+                            {
+                                "key":"Connection",
+                                "value":"keep-alive"
+                            }
+
+                        ],
+                        "body":
+                        {
+                            "mode":"formdata",
+                            "formdata":
+                            [
+                                {
+                                    "key":"nama",
+                                    "value":""
+                                },
+                                {
+                                    "key":"email",
+                                    "value":""
+                                },
+                                {
+                                    "key":"alamat",
+                                    "value":""
+                                },
+                                {
+                                    "key":"phone",
+                                    "value":""
+                                },
+                                {
+                                    "key":"username",
+                                    "value":""
+                                },
+                                {
+                                    "key":"password",
+                                    "value":""
+                                }
+
+                            ]
+
+                        },
+                        "url":
+                        {
+                            "raw": "https://basedata.go-localhub.com/api/register-customer",
+							"protocol": "https",
+							"host": 
+                            [
+								"basedata",
+								"go-localhub",
+								"com"
+							],
+							"path": 
+                            [
+								"api",
+								"register-customer"
+							]
+                        }
+                    }
+                }
+               
+            ]
+            
+        },
+        {
+            "name":"Get TOP 5 Destinasi Wisata",
+            "request":
+            {
+                "method":"GET",
+                "header":
+                [
+                            {
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+
+                ],
+                "body":
+                {
+                    "mode": "raw",
+                    "raw": ""
+                }
+                ,
+                "url":
+                {
+                    "raw": "https://basedata.go-localhub/api/wisata-top-five",
+                    "protocol": "https",
+                    "host": 
+                    [
+                        "basedata",
+						"go-localhub",
+						"com"
+                    ],
+                    "path": 
+                    [
+                        "api",
+                        "wisata-top-five"
+                    ]
+                }
+            }
+        },
+        
+        {
+            "name":"Rekomendasi Penginapan",
+            "request":
+            {
+                "method":"GET",
+                "header":
+                [
+                            {
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+
+                ],
+                "body":
+                {
+                    "mode": "raw",
+                    "raw": ""
+                }
+                ,
+                "url":
+                {
+                    "raw": "https://basedata.go-localhub.com/api/penginapan-rekomendasi",
+                    "protocol": "https",
+                    "host": 
+                    [
+                        "basedata",
+								"go-localhub",
+								"com"
+                    ],
+                    "path": 
+                    [
+                        "api",
+                        "penginapan-rekomendasi"
+                    ]
+                }
+            }
+        },
+        {
+            "name":"Rekomendasi Transportasi",
+            "request":
+            {
+                "method":"GET",
+                "header":
+                [
+                            {
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+
+                ],
+                "body":
+                {
+                    "mode": "raw",
+                    "raw": ""
+                }
+                ,
+                "url":
+                {
+                    "raw": "https://basedata.go-localhub.com/api/transportasi-rekomendasi",
+                    "protocol": "https",
+                    "host": 
+                    [
+                        "basedata",
+						"go-localhub",
+						"com"
+                    ],
+                    "path": 
+                    [
+                        "api",
+                        "transportasi-rekomendasi"
+                    ]
+                }
+            }
+        },
+        {
+            "name":"Rekomendasi Pasar Lokal",
+            "request":
+            {
+                "method":"GET",
+                "header":
+                [
+                            {
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+
+                ],
+                "body":
+                {
+                    "mode": "raw",
+                    "raw": ""
+                }
+                ,
+                "url":
+                {
+                    "raw": "https://basedata.go-localhub.com/api/pasar-lokal-rekomendasi",
+                    "protocol": "https",
+                    "host": 
+                    [
+                        "basedata",
+								"go-localhub",
+								"com"
+                    ],
+                    "path": 
+                    [
+                        "api",
+                        "pasar-lokal-rekomendasi"
+                    ]
+                }
+            }
+        },
+        {
+            "name":"Get Wisata Berdasarkan Wilayah",
+            "request":
+            {
+                "method":"GET",
+                "header":
+                [
+                            {
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+
+                ],
+                "body":
+                {
+                    "mode": "raw",
+                    "raw": ""
+                }
+                ,
+                "url":
+                {
+                    "raw": "https://basedata.go-localhub.com/api/wisata-data-loc/[prov_id]/[kab_id]/[kec_id]/[desa_id]",
+                    "protocol": "https",
+                    "host": 
+                    [
+                        "basedata",
+								"go-localhub",
+								"com"
+                    ],
+                    "path": 
+                    [
+                        "api",
+                        "wisata-data-loc",
+                        "[prov_id]",
+                        "[kab_id]",
+                        "[kec_id]",
+                        "[desa_id]"
+                    ]
+                }
+            }
+        },
+        {
+            "name":"Get Penginapan Berdasarkan Wilayah",
+            "request":
+            {
+                "method":"GET",
+                "header":
+                [
+                            {
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+
+                ],
+                "body":
+                {
+                    "mode": "raw",
+                    "raw": ""
+                }
+                ,
+                "url":
+                {
+                    "raw": "https://basedata.go-localhub.com/api/penginapan-loc/[prov_id]/[kab_id]/[kec_id]/[desa_id]",
+                    "protocol": "https",
+                    "host": 
+                    [
+                        "basedata",
+								"go-localhub",
+								"com"
+                    ],
+                    "path": 
+                    [
+                        "api",
+                        "penginapan-loc",
+                        "[prov_id]",
+                        "[kab_id]",
+                        "[kec_id]",
+                        "[desa_id]"
+                    ]
+                }
+            }
+        },
+        {
+            "name":"Get Pasar Lokal Berdasarkan Wilayah",
+            "request":
+            {
+                "method":"GET",
+                "header":
+                [
+                            {
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+
+                ],
+                "body":
+                {
+                    "mode": "raw",
+                    "raw": ""
+                }
+                ,
+                "url":
+                {
+                    "raw": "https://basedata.go-localhub/api/pasar-lokal-loc/[prov_id]/[kab_id]/[kec_id]/[desa_id]",
+                    "protocol": "https",
+                    "host": 
+                    [
+                        "basedata",
+								"go-localhub",
+								"com"
+                    ],
+                    "path": 
+                    [
+                        "api",
+                        "pasar-lokal-loc",
+                        "[prov_id]",
+                        "[kab_id]",
+                        "[kec_id]",
+                        "[desa_id]"
+                    ]
+                }
+            }
+        }
+        
+        
+        
+    ]
+}
