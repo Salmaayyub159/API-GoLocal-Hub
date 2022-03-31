@@ -484,6 +484,48 @@
                     ]
                 }
             }
+        },
+        {
+            "name":"Get User Parameter ID",
+            "request":
+            {
+                "method":"GET",
+                "header":
+                [
+                            {
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+
+                ],
+                "body":
+                {
+                    "mode": "raw",
+                    "raw": ""
+                }
+                ,
+                "url":
+                {
+                    "raw": "https://basedata.go-localhub/api/tampil-user/[id]",
+                    "protocol": "https",
+                    "host": 
+                    [
+                        "basedata",
+								"go-localhub",
+								"com"
+                    ],
+                    "path": 
+                    [
+                        "api",
+                        "pasar-lokal-loc",
+                        "[id]"
+                    ]
+                }
+            }
         }
         
         
